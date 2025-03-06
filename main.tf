@@ -7,7 +7,7 @@ resource "azurerm_automation_account" "automation_account" {
   tags                          = var.tags
 
   identity {
-    type                        = var.identity_type
-    identity_ids                = var.identity_ids
+    type         = var.identity_type
+    identity_ids = var.identity_ids
   }
 }
